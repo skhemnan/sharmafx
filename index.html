@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			SharmaFX
+		</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/png" />
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="splash-screen">
+			<div class="ticker-container">
+				<!-- TradingView Widget BEGIN -->
+				<div class="tradingview-widget-container">
+					<div class="tradingview-widget-container__widget"></div>
+					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+						{
+						"symbols": [
+									 {
+										  "proName": "FOREXCOM:SPXUSD",
+										  "title": "S&P 500"
+										},
+									 {
+										  "proName": "FOREXCOM:NSXUSD",
+										  "title": "Nasdaq 100"
+										},
+									 {
+										  "proName": "FX_IDC:EURUSD",
+										  "title": "EUR/USD"
+										},
+									 {
+										  "proName": "BITSTAMP:BTCUSD",
+										  "title": "BTC/USD"
+										},
+									 {
+										  "proName": "BITSTAMP:ETHUSD",
+										  "title": "ETH/USD"
+										},
+									 {
+										  "description": "GBP/USD",
+										  "proName": "FX:GBPUSD"
+										},
+									 {
+										  "description": "USD/JPY",
+										  "proName": "FX:USDJPY"
+										},
+									 {
+										  "description": "GBP/JPY",
+										  "proName": "GBPJPY"
+										},
+									 {
+										  "description": "GOLD",
+										  "proName": "OANDA:XAUUSD"
+										},
+									 {
+										  "description": "RIPPLE",
+										  "proName": "CURRENCYCOM:XRPUSD"
+										},
+									 {
+										  "description": "OIL",
+										  "proName": "TVC:USOIL"
+										},
+									 {
+										  "description": "USD/CAD",
+										  "proName": "FX:USDCAD"
+										},
+									 {
+										  "description": "AUD/USD",
+										  "proName": "FX:AUDUSD"
+										}
+							   ],
+						   "colorTheme": "dark",
+						   "isTransparent": false,
+						   "displayMode": "adaptive",
+						   "locale": "en"
+						}
+					</script>
+				</div>
+				<!-- TradingView Widget END -->
+			</div>
+			<!-- Hamburger Menu (mobile only) -->
+			<div class="mobile-nav-container">
+				<div class="nav panel-group">
+					<div class="mobile-nav panel panel-default">
+						<div class="panel-heading" style="background-color: black; color: white;">
+							<img class="mobile-logo" src="./assets/logo.png" alt="logo" />
+							<h4 class="sharmafx-mobile">
+								SHARMAFX
+							</h4>
+							<h4 class="panel-title">
+								<a class="hamburger" data-toggle="collapse" href="#collapse1"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body" style="border-top-color: black;">
+								<ul class="mobile-nav-list">
+									<li>
+										<a class="nav-link" href="/">Home</a>
+									</li>
+									<li>
+										<a class="nav-link" href="#services">Services</a>
+									</li>
+									<li>
+										<a class="nav-link" href="#testimonials">Testimonials</a>
+									</li>
+									<li>
+										<a class="nav-link" href="#faq">FAQ</a>
+									</li>
+									<li>
+										<a class="nav-link" href="#pricing">Pricing</a>
+									</li>
+									<li>
+										<a class="nav-link" href="#contact">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Hamburger Menu -->
+			<div class="nav">
+				<div class="logo-container">
+					<img class="logo" src="./assets/logo.png" alt="logo" />
+					<h4 class="sharmafx">
+						SHARMAFX
+					</h4>
+				</div>
+				<div class="space"></div>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#testimonials">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="title-container">
+				<h1 class="title-text">
+					Stocks, Currencies, Cryptocurrencies, and Commodities
+				</h1>
+				<h2 class="subtitle-text">
+					Technical and Fundamental Approach to Two Financial Markets
+				</h2>
+			</div>
+		</div>
+		<div class="section" id="services">
+			<h1 class="services-title-mobile">
+				Services that will help you grow.
+			</h1>
+			<div class="container-fluid">
+				<div class="services row">
+					<!-- Start Row 1 -->
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" src="./assets/newspaper.png" alt="newspaper" id="newspaper-img" />
+							<div class="card-body">
+								<h4 class="card-title">
+									Fundamental Analysis
+								</h4>
+								<p class="card-text">
+									Economic data and news affect the value of currencies in the foreign exchange market. It is vital to understand the fundamentals
+									to know how the economic condition of a country will impact its currency and your trades. I will provide a weekly fundamental
+									breakdown of the economic data and its impact on the currencies.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" src="./assets/chart.png" alt="chart" />
+							<div class="card-body">
+								<h4 class="card-title">
+									Technical Analysis
+								</h4>
+								<p class="card-text">
+									Price Action is one of the critical factors of technical analysis. It is the core of indicators and chart patterns, but it is
+									also one of the hardest concepts to master in technical analysis. The strategies I will be teaching are supply and demand,
+									multiple timeframe analysis, reading and understanding candlesticks, and Wyckoff that can be used for scalping, day-trading,
+									swing-trading, and position-trading.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" src="./assets/trade-breakdown.png" alt="trade-breakdown" id="breakdown-img" />
+							<div class="card-body">
+								<h4 class="card-title">
+									Trade Breakdowns
+								</h4>
+								<p class="card-text">
+									A complete and step-by-step breakdown of trades is provided twice a week from a technical and fundamental perspective
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" src="./assets/journal.png" alt="journal" id="journal-img" />
+							<div class="card-body">
+								<h4 class="card-title">
+									Trading Plan and Journaling
+								</h4>
+								<p class="card-text">
+									Trading Plan and Journaling are essential components of discipline and consistency required to be a successful trader. Every
+									student gets a customized plan tailored to his/her needs.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" src="./assets/support.png" alt="support" />
+							<div class="card-body">
+								<h4 class="card-title">
+									Support System
+								</h4>
+								<p class="card-text">
+									Every student gets access to a 1-on-1 mentorship where the mentor works him/her to improve any aspects of trading, answer any
+									questions or concerns, and reviews trades. Also, the student receives access to a very supportive community.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<h1 class="services-title">
+							Services that will help you grow.
+						</h1>
+					</div>
+
+					<!-- End Row 1 -->
+				</div>
+				<!--
+			 <div class="row">
+					<!--Start Row 2 -->
+				<!-- End Row 2
+			 </div> -->
+			</div>
+		</div>
+		<div class="section" id="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h1 class="testimonials-title">
+							Hear what our customers have to say.
+						</h1>
+					</div>
+					<div class="col-md-7">
+						<!-- Start of Carousel -->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<p class="testimonial-text">
+										I joined SharmaFX just recently and have been wanting to invest in forex for a few months now. The mentorship allowed me
+										to understand better how to enter the market using the proper analysis instead of hoping that I enter at the right time.
+										I did learn on my own outside of the webinars; however, Sharma always helped with understanding the content in the best
+										way possible. The mentorship also allowed me to see how a professional trader, such as Sharma, analyzes the chart to see
+										what mistakes I was making while taking a trade. It is always better to wait for a trade to come to you rather than
+										chase a trade that’s not there in the first place.
+									</p>
+									<h2 class="testimonial-customer">
+										- Stephen
+									</h2>
+								</div>
+								<div class="item">
+									<p class="testimonial-text">
+										I love the content Sharma provides. She breaks everything down and makes sure we all understand the content before
+										moving on. I am enrolled in the Forex class, and there is a lot of content to learn but Sharma makes it so fun and
+										exciting. Thank you, Sharma!!
+									</p>
+									<h2 class="testimonial-customer">
+										- Anu
+									</h2>
+								</div>
+								<div class="item">
+									<p class="testimonial-text">
+										I’m blown away by how thoroughly educated and dedicated Sharma is about the Forex market. I’ve invested in a mentorship
+										prior to this one, but I’m glad I found Sharma because her passion for the industry is rubbing off on me and, that’s a
+										new experience! Sharma provides fundamental knowledge every week and analyzes potential currency pair trades of the week
+										with the team. She is easily approachable and completely transparent about answering any questions that may come up
+										along the way. I find these qualities to be vital in a mentor who is helping me with my money! Best decision ever!!
+									</p>
+									<h2 class="testimonial-customer">
+										- RJ
+									</h2>
+								</div>
+								<div class="item">
+									<p class="testimonial-text">
+										I like how simply things were described and the time that was taken to address questions, even with backtesting, current
+										examples, and comparing what I saw to what Sharma saw. We delved into charts fairly soon and I was able to apply what I
+										saw, with success. As someone who was already trading with real money, what we have covered is giving me more confidence
+										to pursue Forex seriously and approach trades with less anxiety and self-doubt.
+									</p>
+									<h2 class="testimonial-customer">
+										- Ian
+									</h2>
+								</div>
+								<div class="item">
+									<p class="testimonial-text">
+										At first, I started learning and trading forex on my own and it didn't go well. I started with a $200.00 account, which
+										went down to $9.00 in less than 1 day due to a lack of knowledge. After listening to SharmaFx on YouTube Live, I decided
+										to join her mentorship program due to the amount of knowledge she showed on YouTube Live. After being in the program for
+										about a month and taking my knowledge from her program, I was able to take my old $9.00 account and convert it into a
+										$200.00+ account in less than a few hours.
+									</p>
+									<h2 class="testimonial-customer">
+										- HV
+									</h2>
+								</div>
+							</div>
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background: none; color: black;">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next" style="background: none; color: black;">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<!-- End of Carousel -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="faq">
+			<h1 class="faq-title-mobile">
+				Frequently Asked Questions.
+			</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<!-- Start of Accordion -->
+						<div class="container">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+												>Q: When do the mentorship applications open?</a
+											>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse">
+										<div class="panel-body">
+											The applications for both mentorships open the first week of every month and will be posted on our website.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"
+												>Q: Which platform is used for the community?</a
+											>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											We use Discord for all of our communication and mentorship purposes.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Q: Can I enroll in both mentorships?</a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											Yes, You will need to complete an application and upon approval, you will need to purchase subscription
+											separately.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse4"
+												>Q: Are there any pre-requisites for the mentorships</a
+											>
+										</h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div class="panel-body">
+											There are no pre-requisites for either mentorship, besides the student must be willing to learn and dedicate the
+											necessary time and effort to his/her learning. Each student has a different learning pace, so it is subjective
+											as to how much time each student will require to learn the content. The mentor will help the student each step
+											of the process and ensure the student is given the necessary attention and assistance to succeed.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Q: What is the refund policy?</a>
+										</h4>
+									</div>
+									<div id="collapse5" class="panel-collapse collapse">
+										<div class="panel-body">
+											After payment is processed, the transaction is non-refundable and non-transferable, all payments are final. This
+											fee is for educational purposes ONLY. We are not providing trade signals or any financial advice.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse6"
+												>Q: Are the services general or tailored to each student?</a
+											>
+										</h4>
+									</div>
+									<div id="collapse6" class="panel-collapse collapse">
+										<div class="panel-body">
+											Every service is tailored to each individual’s strengths and weaknesses. The mentor will work with the student
+											and understand his/her strengths and weaknesses to create a plan for the student’s success. The mentor will also
+											check in with the student every week for updates and necessary modifications to the plan.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Q: How often and long are the webinars?</a>
+										</h4>
+									</div>
+									<div id="collapse7" class="panel-collapse collapse">
+										<div class="panel-body">
+											The webinars are every Saturday and last for approximately an hour. When the webinar is content-heavy, there are
+											also webinars in the middle of the week to make the content more digestible.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+												>Q: How much money do I need to start trading?</a
+											>
+										</h4>
+									</div>
+									<div id="collapse8" class="panel-collapse collapse">
+										<div class="panel-body">
+											You can start with any amount you are comfortable with. It is common to start with a minimum of $50 to account
+											for commissions, margins, and swaps.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" style="background-color: white;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse9"
+												>Q: What are the trading hours for Forex and Stock Market?</a
+											>
+										</h4>
+									</div>
+									<div id="collapse9" class="panel-collapse collapse">
+										<div class="panel-body">
+											The Forex Market is open 24 hours for 5 days a week. The market opens on Sunday and the trading shifts from one
+											part of the world to another until Friday end of New York session.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Accordion -->
+					</div>
+					<div class="col-md-5">
+						<h1 class="faq-title">
+							Frequently Asked Questions.
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="pricing">
+			<div class="container">
+				<h1 class="pricing-title">
+					Pricing.
+				</h1>
+			</div>
+			<div class="container-fluid">
+				<div class="pricing row">
+					<div class="col-sm-3">
+						<div class="pricing card">
+							<div class="card-body">
+								<h2 class="pricing card-title">
+									Stocks Lifetime.
+								</h2>
+								<h3 class="price">
+									$275.00
+								</h3>
+								<ul class="benefits">
+									<li>
+										Weekly Webinar
+									</li>
+									<li>
+										Fundamental Analysis
+									</li>
+									<li>
+										Technical Analysis
+									</li>
+									<li>
+										Trading Plan and Journal
+									</li>
+									<li>
+										Trade Psychology
+									</li>
+									<li>
+										1-ON-1 Mentorship
+									</li>
+									<li>
+										Community Access
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="pricing card">
+							<div class="card-body">
+								<h2 class="pricing card-title">
+									Stocks Monthly.
+								</h2>
+								<h3 class="price">
+									$35.50
+								</h3>
+								<ul class="benefits">
+									<li>
+										Weekly Webinar
+									</li>
+									<li>
+										Fundamental Analysis
+									</li>
+									<li>
+										Technicial Analysis
+									</li>
+									<li>
+										Community Access
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="pricing card">
+							<div class="card-body">
+								<h2 class="pricing card-title">
+									Forex Lifetime.
+								</h2>
+								<h3 class="price">
+									$275.00
+								</h3>
+								<ul class="benefits">
+									<li>
+										Weekly Webinar
+									</li>
+									<li>
+										Fundamental Analysis
+									</li>
+									<li>
+										Technical Analysis
+									</li>
+									<li>
+										Trading Plan and Journal
+									</li>
+									<li>
+										Trade Psychology
+									</li>
+									<li>
+										1-ON-1 Mentorship
+									</li>
+									<li>
+										Community Access
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="pricing card">
+							<div class="card-body">
+								<h2 class="pricing card-title">
+									Forex Monthly.
+								</h2>
+								<h3 class="price">
+									$35.50
+								</h3>
+								<ul class="benefits">
+									<li>
+										Weekly Webinar
+									</li>
+									<li>
+										Fundamental Analysis
+									</li>
+									<li>
+										Technicial Analysis
+									</li>
+									<li>
+										Community Access
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="contact">
+			<div class="container"></div>
+			<div class="form container">
+				<h1 class="contact-title">
+					Contact Us.
+				</h1>
+				<div class="field">
+					<label for="name">Name</label>
+					<input id="name" type="text" />
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="text" id="email" />
+				</div>
+				<div class="field">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" cols="30" rows="10"></textarea>
+				</div>
+				<input type="submit" />
+			</div>
+		</div>
+		<div class="footer">
+			<h4 class="copyright">
+				©2020 by SharmaFX
+			</h4>
+		</div>
+	</body>
+</html>
